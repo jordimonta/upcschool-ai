@@ -83,10 +83,10 @@ def test_model(model: torch.nn.Module,
 if __name__ == "__main__":
 
     config = {
-        "epochs": 1,
+        "epochs": 8,
         "lrate": 0.001,
         "batchsize": 100,
-        "activation": "relu"
+        "activation": "tanh"
     }
     
     trans = transforms.Compose([transforms.ToTensor(), transforms.Normalize(mean=0.1307, std=0.3081)])
@@ -104,10 +104,21 @@ if __name__ == "__main__":
 
     model_trained=train_model(config,train_dataset,val_dataset)
 
-    save_model(model_trained, "/home/manager/upcschool-ai/upcschool-ai/session-2/model.save")
+    save_model(model_trained, "/home/manager/upcschool-ai/upcschool-ai/session-2/model_best2.save")
 
     test_dataloader = torch.utils.data.DataLoader(test_dataset, batch_size=config["batchsize"], shuffle=False)
     print(test_model(model_trained,
                     torch.nn.CrossEntropyLoss(),
                     test_dataloader)
         )
+
+#### RESULTS #####
+# {'Eval epoch accuracy ': 0.6652000021934509}
+# {'Eval epoch accuracy ': 0.8148000025749207}
+# {'Eval epoch accuracy ': 0.8051999974250793}
+# {'Eval epoch accuracy ': 0.8167999982833862}
+# {'Eval epoch accuracy ': 0.8216000008583069}
+# {'Eval epoch accuracy ': 0.851599998474121}
+# {'Eval epoch accuracy ': 0.907599995136261}
+# {'Eval epoch accuracy ': 0.9336000037193298}
+# {'Test accuracy': 0.9284000086784363}

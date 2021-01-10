@@ -106,17 +106,40 @@ if __name__ == "__main__":
         config={
             "epochs": tune.uniform(1, 10),
             "lrate": 0.001,
-            "batchsize": 16,
+            "batchsize": 100,
             "activation": tune.grid_search(["relu", "tanh"]),
         })
 
     print("Best hyperparameters found were: ", analysis.best_config)
 
+#RESULTS
+# Number of trials: 10/10 (10 TERMINATED)
+# +--------------------+------------+-------+--------------+----------+--------+--------+------------------+
+# | Trial name         | status     | loc   | activation   |   epochs |    acc |   iter |   total time (s) |
+# |--------------------+------------+-------+--------------+----------+--------+--------+------------------|
+# | _inner_d7cd1_00000 | TERMINATED |       | relu         |  8.14001 | 0.8484 |      8 |         3146.66  |
+# | _inner_d7cd1_00001 | TERMINATED |       | tanh         |  6.79278 | 0.8748 |      6 |         2415.06  |
+# | _inner_d7cd1_00002 | TERMINATED |       | relu         |  7.40052 | 0.3904 |      7 |         2785.51  |
+# | _inner_d7cd1_00003 | TERMINATED |       | tanh         |  5.37681 | 0.8432 |      5 |         2041.56  |
+# | _inner_d7cd1_00004 | TERMINATED |       | relu         |  4.06012 | 0.252  |      4 |         1504.87  |
+# | _inner_d7cd1_00005 | TERMINATED |       | tanh         |  7.59784 | 0.9288 |      7 |         2635.5   |
+# | _inner_d7cd1_00006 | TERMINATED |       | relu         |  6.28263 | 0.3148 |      6 |         2251.97  |
+# | _inner_d7cd1_00007 | TERMINATED |       | tanh         |  6.34101 | 0.8664 |      6 |         2175.55  |
+# | _inner_d7cd1_00008 | TERMINATED |       | relu         |  5.31423 | 0.7048 |      5 |         1794.67  |
+# | _inner_d7cd1_00009 | TERMINATED |       | tanh         |  4.30082 | 0.8444 |      4 |          866.324 |
+# +--------------------+------------+-------+--------------+----------+--------+--------+------------------+
+
+
+# Best hyperparameters found were:  {'epochs': 7.59783548805109, 'lrate': 0.001, 'batchsize': 100, 'activation': 'tanh'}
+
+
+
+    # Put de best configuration here or execute main.py with the best configuration
     # config = {
-    #     "epochs": 1,
+    #     "epochs": 8,
     #     "lrate": 0.001,
-    #     "batchsize": 16,
-    #     "activation": "relu"
+    #     "batchsize": 100,
+    #     "activation": "tanh"
     # }
     # model_trained=train_model(config,train_dataset,val_dataset)
 
@@ -127,4 +150,5 @@ if __name__ == "__main__":
     #                 torch.nn.CrossEntropyLoss(),
     #                 test_dataloader)
     #     )
+
 
