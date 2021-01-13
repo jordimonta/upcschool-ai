@@ -124,3 +124,14 @@ if __name__ == "__main__":
 # {'Test accuracy': 0.970400002002716}
 
 #### RESULTS 10 epochs #####
+# {'Eval epoch accuracy ': 0.8627999997138978}
+# {'Eval epoch accuracy ': 0.9203999996185303}
+# {'Eval epoch accuracy ': 0.9432000041007995}
+# {'Eval epoch accuracy ': 0.9508000040054321}
+# {'Eval epoch accuracy ': 0.9456000018119812}
+# {'Eval epoch accuracy ': 0.9564000034332275}
+# {'Eval epoch accuracy ': 0.9676000022888184}
+# {'Eval epoch accuracy ': 0.9692000031471253}
+# {'Eval epoch accuracy ': 0.9684000086784362}
+# {'Eval epoch accuracy ': 0.9720000076293945}
+# {'Test accuracy': 0.9756000089645386}
