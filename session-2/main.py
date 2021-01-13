@@ -83,7 +83,7 @@ def test_model(model: torch.nn.Module,
 if __name__ == "__main__":
 
     config = {
-        "epochs": 8,
+        "epochs": 10,
         "lrate": 0.001,
         "batchsize": 100,
         "activation": "tanh"
@@ -112,13 +112,15 @@ if __name__ == "__main__":
                     test_dataloader)
         )
 
-#### RESULTS #####
-# {'Eval epoch accuracy ': 0.6652000021934509}
-# {'Eval epoch accuracy ': 0.8148000025749207}
-# {'Eval epoch accuracy ': 0.8051999974250793}
-# {'Eval epoch accuracy ': 0.8167999982833862}
-# {'Eval epoch accuracy ': 0.8216000008583069}
-# {'Eval epoch accuracy ': 0.851599998474121}
-# {'Eval epoch accuracy ': 0.907599995136261}
-# {'Eval epoch accuracy ': 0.9336000037193298}
-# {'Test accuracy': 0.9284000086784363}
+#### RESULTS 8 epochs #####
+# 'Eval epoch accuracy ': 0.864399995803833}
+# {'Eval epoch accuracy ': 0.9264000010490417}
+# {'Eval epoch accuracy ': 0.9112000012397766}
+# {'Eval epoch accuracy ': 0.9456000113487244}
+# {'Eval epoch accuracy ': 0.9608000063896179}
+# {'Eval epoch accuracy ': 0.9508000087738037}
+# {'Eval epoch accuracy ': 0.9624000096321106}
+# {'Eval epoch accuracy ': 0.9660000014305115}
+# {'Test accuracy': 0.970400002002716}
+
+#### RESULTS 10 epochs #####

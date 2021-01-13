@@ -117,20 +117,20 @@ if __name__ == "__main__":
 # +--------------------+------------+-------+--------------+----------+--------+--------+------------------+
 # | Trial name         | status     | loc   | activation   |   epochs |    acc |   iter |   total time (s) |
 # |--------------------+------------+-------+--------------+----------+--------+--------+------------------|
-# | _inner_d7cd1_00000 | TERMINATED |       | relu         |  8.14001 | 0.8484 |      8 |         3146.66  |
-# | _inner_d7cd1_00001 | TERMINATED |       | tanh         |  6.79278 | 0.8748 |      6 |         2415.06  |
-# | _inner_d7cd1_00002 | TERMINATED |       | relu         |  7.40052 | 0.3904 |      7 |         2785.51  |
-# | _inner_d7cd1_00003 | TERMINATED |       | tanh         |  5.37681 | 0.8432 |      5 |         2041.56  |
-# | _inner_d7cd1_00004 | TERMINATED |       | relu         |  4.06012 | 0.252  |      4 |         1504.87  |
-# | _inner_d7cd1_00005 | TERMINATED |       | tanh         |  7.59784 | 0.9288 |      7 |         2635.5   |
-# | _inner_d7cd1_00006 | TERMINATED |       | relu         |  6.28263 | 0.3148 |      6 |         2251.97  |
-# | _inner_d7cd1_00007 | TERMINATED |       | tanh         |  6.34101 | 0.8664 |      6 |         2175.55  |
-# | _inner_d7cd1_00008 | TERMINATED |       | relu         |  5.31423 | 0.7048 |      5 |         1794.67  |
-# | _inner_d7cd1_00009 | TERMINATED |       | tanh         |  4.30082 | 0.8444 |      4 |          866.324 |
+# | _inner_ddf78_00000 | TERMINATED |       | relu         |  3.28255 | 0.9236 |      3 |         1146.1   |
+# | _inner_ddf78_00001 | TERMINATED |       | tanh         |  5.5406  | 0.9468 |      5 |         1934.41  |
+# | _inner_ddf78_00002 | TERMINATED |       | relu         |  9.6181  | 0.948  |      9 |         3444.15  |
+# | _inner_ddf78_00003 | TERMINATED |       | tanh         |  1.62362 | 0.8408 |      1 |          390.541 |
+# | _inner_ddf78_00004 | TERMINATED |       | relu         |  7.35741 | 0.952  |      7 |         2670.29  |
+# | _inner_ddf78_00005 | TERMINATED |       | tanh         |  4.83323 | 0.946  |      4 |         1540.81  |
+# | _inner_ddf78_00006 | TERMINATED |       | relu         |  5.26032 | 0.9504 |      5 |         1905.59  |
+# | _inner_ddf78_00007 | TERMINATED |       | tanh         |  9.82794 | 0.9568 |      9 |         2396.35  |
+# | _inner_ddf78_00008 | TERMINATED |       | relu         |  3.43788 | 0.9068 |      3 |         1067.85  |
+# | _inner_ddf78_00009 | TERMINATED |       | tanh         |  3.87895 | 0.9224 |      3 |          913.847 |
 # +--------------------+------------+-------+--------------+----------+--------+--------+------------------+
 
 
-# Best hyperparameters found were:  {'epochs': 7.59783548805109, 'lrate': 0.001, 'batchsize': 100, 'activation': 'tanh'}
+# Best hyperparameters found were:  {'epochs': 9.827942822722006, 'lrate': 0.001, 'batchsize': 100, 'activation': 'tanh'}
 
 
 

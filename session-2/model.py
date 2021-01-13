@@ -26,7 +26,7 @@ class MyModel(nn.Module):
                                 )
         self.linear1 = nn.Linear(2048 , 100)
         self.linear2 = nn.Linear(100, 15)
-
+        self.act2 = nn.LogSoftmax(dim=0)
 
     def forward(self, x):
         #x = x.unsqueeze(1) # single channel image
@@ -35,5 +35,5 @@ class MyModel(nn.Module):
         x = torch.flatten(x, start_dim=1)
         x = self.linear1(x)
         x = self.linear2(x)
-        x = self.act(x)
+        x = self.act2(x)
         return x
